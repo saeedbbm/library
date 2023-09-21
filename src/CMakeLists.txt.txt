@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(BookProject)
+
+add_executable(BookApp bookApp/main.cpp bookApp/Book.cpp)
+
+target_include_directories(BookApp PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/bookApp)
